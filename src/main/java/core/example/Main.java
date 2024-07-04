@@ -1,4 +1,4 @@
-package org.example;
+package core.example;
 
 
 import org.openqa.selenium.By;
@@ -28,7 +28,7 @@ public class Main {
 
         WebElement message = driver.findElement(By.id("message"));
         message.getText();
-
+        System.out.println("message");
         driver.quit();
     }
 }
