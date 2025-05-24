@@ -1,6 +1,5 @@
 package core.example;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,12 +22,12 @@ public class Main {
         WebElement textBox = driver.findElement(By.name("my-text"));
         WebElement submitButton = driver.findElement(By.cssSelector("button"));
 
-        textBox.sendKeys("Selenium");
+        textBox.sendKeys("You just ran simple Java entry-point program");
         submitButton.click();
 
         WebElement message = driver.findElement(By.id("message"));
         message.getText();
-        System.out.println("message");
+        System.out.println("Message: " + message.getText());
         driver.quit();
     }
 }
